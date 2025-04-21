@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영어 단어 학습 퀴즈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <div id="status-bar">
+      <span id="stats">0/0</span>
+      <span id="timer">00:00</span>
+    </div>
+    <div id="progress">문제 <span id="qnum">1</span>/30</div>
+    <div id="prompt">뜻이 여기에 나옵니다</div>
+    <div id="choices" class="hidden">
+      <button class="choice-btn"></button>
+      <button class="choice-btn"></button>
+      <button class="choice-btn"></button>
+      <button class="choice-btn"></button>
+    </div>
+    <div id="input-area" class="hidden">
+      <div id="scramble-hint"></div>
+      <input type="text" id="answer-input" autocomplete="off" />
+      <button id="submit-btn">제출</button>
+    </div>
+    <div id="feedback"></div>
+  </div>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
